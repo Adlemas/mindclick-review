@@ -1,0 +1,23 @@
+.actions {
+    display: flex;
+    align-items: center;
+
+    border-radius: 3px;
+    gap: 1.5rem;
+
+    padding: 0.2rem;
+    border: 1px solid;
+
+    :global {
+        .ant-typography {
+            font-size: 0.8rem;
+            padding-right: 1rem;
+        }
+    }
+
+    .close_button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

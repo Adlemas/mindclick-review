@@ -1,0 +1,42 @@
+.chat_view {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+
+    padding: 0;
+    margin: 0;
+
+    border: 0;
+
+    :global {
+        .ant-card-body {
+            width: 100%;
+            height: 100%;
+
+            overflow: hidden;
+
+            display: flex;
+            align-items: stretch;
+
+            .chat_view_item {
+                // fill all space
+                flex: 1;
+                // disable all borders
+                border: none;
+            }
+        }
+
+        .ant-card-head {
+            border-bottom: 1px solid #e8e8e8 !important;
+        }
+    }
+
+    &__dark {
+        :global {
+            .ant-card-head {
+                border-bottom: 0 !important;
+                box-shadow: 0 0 5px #0f1011;
+            }
+        }
+    }
+}

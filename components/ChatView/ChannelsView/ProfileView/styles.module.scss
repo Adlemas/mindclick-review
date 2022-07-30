@@ -1,0 +1,30 @@
+.profile_view {
+    border: 0 !important;
+
+    border-radius: 1rem !important;
+
+    &__dark {
+        background-color: #27292e !important;
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+    }
+
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+    margin-top: 1.5rem !important;
+
+    &__info {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        flex: 1;
+    }
+
+    :global {
+        .ant-card-body {
+            padding: 15px !important;
+            display: flex;
+            align-items: center !important;
+            flex-direction: row !important;
+        }
+    }
+}

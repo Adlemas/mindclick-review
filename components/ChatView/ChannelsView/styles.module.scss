@@ -1,0 +1,29 @@
+.channels_view {
+    max-width: 300px;
+
+    &__dark {
+        background-color: #181a1b !important;
+        color: #cacaca !important;
+
+        .channels_view__search {
+            border: 0 !important;
+            background-color: #161819 !important;
+        }
+    }
+
+    &__search {
+        border-radius: 10px !important;
+
+        input {
+            background-color: inherit;
+        }
+    }
+
+    :global {
+        .ant-card-body {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.member_holder {
+    // Transorm (like in Unity)
+    position: absolute;
+    left: 1.5rem;
+    top: 1.5rem;
+    padding: 0.5rem 0.8rem;
+
+    @media screen and (max-width: 768px) {
+        max-width: 90%;
+        left: 5%;
+        padding: 0.25rem 0.6rem;
+
+        font-size: 12px;
+    }
+
+    &_dark {
+        background-color: #1f1f1f;
+
+        div {
+            &:not(.setted) {
+                color: #fefefe !important;
+            }
+        }
+    }
+
+    // Some general styles
+    border-radius: 5px;
+    border: 1px solid #0004;
+    background-color: #fefefe;
+
+    // Children's style
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+
+    font-size: 14px;
+
+    div {
+        // general
+        border: 0;
+        outline: 0;
+        background: none;
+        height: 100%;
+        width: 150px;
+        user-select: none;
+
+        // children styles
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:not(.setted) {
+            color: #0007;
+        }
+    }
+}

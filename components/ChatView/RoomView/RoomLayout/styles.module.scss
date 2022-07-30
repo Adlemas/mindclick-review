@@ -1,0 +1,43 @@
+.room_layout {
+    flex: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .3rem;
+
+
+    max-width: 90%;
+    width: 90%;
+
+    &__empty {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__wrapper {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+
+        max-height: 90%;
+
+        overflow-y: auto;
+
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #818B99;
+            border-radius: 9px;
+            background-clip: content-box;
+        }
+    }
+}

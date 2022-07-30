@@ -1,0 +1,49 @@
+.row_end {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.profile_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem 0 3.5rem;
+
+    .profile_content {
+        position: relative;
+
+        input {
+            display: none;
+        }
+
+        .float_edit {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            color: #fff;
+
+            width: 35px;
+            height: 35px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 17px;
+
+            cursor: pointer;
+
+            border-radius: 50%;
+            background-color: dodgerblue;
+
+            outline: 0px solid rgba(30, 144, 255, 0.5);
+            transition: outline-width 0.1s;
+
+            &:hover {
+                outline-width: 4px;
+            }
+        }
+    }
+}

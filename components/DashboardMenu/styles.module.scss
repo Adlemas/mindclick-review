@@ -1,0 +1,16 @@
+$navbar-color: #252931;
+$navbar-text: #fafafadd;
+
+.parent {
+    margin-bottom: 5rem;
+    padding-bottom: 5rem;
+}
+
+.subtitle {
+    margin-top: 1.4rem;
+    padding-left: 0.5rem;
+
+    &.collapsed {
+        display: none;
+    }
+}

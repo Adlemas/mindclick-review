@@ -1,0 +1,96 @@
+.bubble_message {
+    padding: 0.4rem 0.8rem;
+    background-color: #efefef;
+
+    max-width: 400px;
+
+    user-select: none;
+
+    border-radius: 1rem;
+    // box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+    margin-top: 0.5rem;
+
+    border-top-left-radius: 0;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__content__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__content__time {
+        font-size: 0.65rem;
+    }
+
+    &__avatar {
+        width: 32px;
+        margin-right: 1rem;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        margin-top: 1.5rem;
+
+        .bubble_message {
+            :global {
+                .ant-typography {
+                    white-space: pre-wrap;
+                }
+            }
+        }
+
+        &__mine {
+            align-self: flex-end;
+            flex-direction: row-reverse;
+
+            .bubble_message {
+                border-top-left-radius: 1rem;
+                border-top-right-radius: 0;
+                background-color: #387aff !important;
+
+                &__content {
+                    align-items: flex-end;
+                }
+
+                :global {
+                    .ant-typography {
+                        color: #dadada;
+                        text-align: right;
+                    }
+                }
+            }
+
+            .bubble_message__avatar {
+                margin-right: 0;
+                margin-left: 1rem;
+            }
+
+            .bubble_message__content__wrapper {
+                flex-direction: row-reverse;
+                // width: 100%;
+            }
+        }
+
+        &__dark {
+            .bubble_message {
+                background-color: #27292e;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        &__nomargin {
+            margin-top: 0;
+        }
+    }
+}

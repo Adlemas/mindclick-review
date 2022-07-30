@@ -1,0 +1,17 @@
+.chats_card {
+    height: 80vh;
+    max-height: 80vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    // padding: 0.5rem;
+
+    &__inner {
+        height: 100%;
+    }
+
+    &__scrollable {
+        overflow-y: auto;
+        overflow-x: hidden;
+        max-height: 100%;
+    }
+}

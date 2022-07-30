@@ -1,0 +1,27 @@
+.header {
+    box-shadow: none;
+    border-bottom: 1px solid #0002;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &_light {
+        background-color: white;
+    }
+
+    * {
+        margin: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 0;
+        padding-right: 1rem;
+    }
+
+    :global {
+        .ant-typography {
+            color: inherit !important;
+        }
+    }
+}

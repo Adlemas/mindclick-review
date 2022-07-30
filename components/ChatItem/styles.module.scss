@@ -1,0 +1,65 @@
+.chat_item {
+    border: 0;
+    width: 100%;
+
+    user-select: none;
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
+
+    // styles
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem !important;
+
+    background-color: #fefefe;
+
+    &__name {
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
+
+    &__hint {
+        font-size: 0.6rem;
+        font-weight: 600;
+        color: #868e96;
+    }
+
+    &__selected {
+        background-color: #31323b;
+    }
+
+    &:hover {
+        background-color: #31323b;
+        color: #fff;
+    }
+
+    &__dark {
+        box-shadow: none;
+        border: 1px solid #303030;
+
+        &:hover {
+            background-color: #333 !important;
+            box-shadow: none;
+        }
+
+        &.chat_item__selected {
+            background-color: #333 !important;
+        }
+    }
+
+    &__selected {
+        background-color: #31323b !important;
+        color: #fff;
+    }
+
+    border-radius: 10px !important;
+
+    :global {
+        .ant-card-body {
+            max-width: 100%;
+            overflow-x: hidden;
+            text-overflow: ellipsis;
+            padding: 0.7rem 1rem;
+        }
+    }
+}

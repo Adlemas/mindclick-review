@@ -1,0 +1,28 @@
+.members_view {
+    max-width: 250px;
+    transition: max-width 0.2s ease-in-out;
+
+    position: relative;
+
+    &__float_btn {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    :global {
+        .ant-card-body {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__dark {
+        background-color: #181a1b !important;
+    }
+}

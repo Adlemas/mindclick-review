@@ -1,0 +1,21 @@
+.screens {
+    position: absolute;
+    top: 6rem;
+    right: 1.5rem;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+
+    background-color: #fefefe;
+
+    &_dark {
+        background-color: #1f1f1f;
+    }
+
+    z-index: 10;
+
+    border: 1px solid #0005;
+    border-radius: 3px;
+    overflow: hidden;
+}

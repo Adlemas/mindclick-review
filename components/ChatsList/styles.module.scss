@@ -1,0 +1,33 @@
+.chats_list {
+    padding: 0.5rem !important;
+    background-color: #f9fbfc;
+
+    height: 100%;
+    width: 100%;
+
+    &__wrapper {
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        :global {
+            .ant-space-item:nth-child(2) {
+                flex: 1;
+            }
+        }
+    }
+
+    &__dark {
+        background-color: #141414;
+    }
+
+    &__title {
+        margin: 1rem;
+    }
+
+    &__item {
+        padding: 0 !important;
+        border-bottom: 0 !important;
+    }
+}

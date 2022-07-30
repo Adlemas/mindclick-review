@@ -1,0 +1,44 @@
+@import "module/_font.scss";
+
+// Vender styles
+@import "antd/dist/antd.css";
+@import "module/variables";
+
+@import "module/antd-mode.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    list-style: none;
+}
+
+html,
+body,
+#__next {
+    width: 100%;
+    height: 100%;
+
+    font-size: 18px;
+
+    @media (max-width: 400px) {
+        font-size: 12px;
+    }
+}
+
+.ant-modal-wrap {
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #818B99;
+        border-radius: 9px;
+        background-clip: content-box;
+    }
+}

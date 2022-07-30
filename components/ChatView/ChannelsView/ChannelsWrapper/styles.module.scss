@@ -1,0 +1,39 @@
+.channels_wrapper {
+    margin-top: 1rem;
+
+    &__title {
+        text-transform: uppercase;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        user-select: none;
+
+        span {
+            gap: 0.5rem;
+            display: flex;
+            align-items: center;
+            flex: 1;
+        }
+    }
+
+    &__content {
+        // margin-top: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        :global {
+            .ant-spin-nested-loading {
+                width: 100%;
+
+                .ant-spin-container {
+                    width: 100%;
+                    height: 100%;
+                    flex: 1;
+                }
+            }
+        }
+    }
+}

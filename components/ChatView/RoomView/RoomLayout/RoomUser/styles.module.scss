@@ -1,0 +1,85 @@
+.room_user {
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+
+    min-width: 40%;
+    min-height: 200px;
+    border-radius: .5rem;
+
+    overflow: hidden;
+
+    cursor: default;
+
+    user-select: none;
+
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    background-color: #fff;
+
+    position: relative;
+
+    &__dark {
+        background-color: #252525;
+    }
+
+    &__bottom {
+        position: absolute;
+        bottom: .5rem;
+        left: .5rem;
+
+        z-index: 2;
+
+        gap: .5rem;
+        display: flex;
+
+        opacity: 0;
+
+        transition: opacity .2s ease-in-out;
+
+        &__hover {
+            opacity: 1;
+        }
+    }
+
+    &__top {
+        position: absolute;
+        top: .5rem;
+        left: .5rem;
+        right: .5rem;
+
+        z-index: 2;
+
+        gap: .5rem;
+        display: flex;
+
+        justify-content: space-between;
+
+        opacity: 0;
+
+        transition: opacity .2s ease-in-out;
+
+        &__hover {
+            opacity: 1;
+        }
+    }
+
+    &__btn {
+        cursor: pointer;
+        user-select: none;
+    }
+
+    &__item {
+        background-color: #f1f1f1;
+        padding: 3px 7px;
+        border-radius: 5px;
+
+        &__dark {
+            background-color: #353535;
+        }
+    }
+}

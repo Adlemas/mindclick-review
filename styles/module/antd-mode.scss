@@ -1,0 +1,85 @@
+.ant-card {
+    border-radius: 6px;
+    border: 1px solid #ccc;
+
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background-color: #818B99;
+        border: 6px solid transparent;
+        border-radius: 9px;
+        background-clip: content-box;
+    }
+}
+
+input.ant-input,
+.ant-picker,
+.ant-select-selector {
+    padding: 2.5px 12.5px !important;
+    font-size: 14px !important;
+}
+
+.ant-select-selector,
+.ant-select {
+    height: auto !important;
+}
+
+.ant-picker-input input {
+    font-size: 14px !important;
+}
+
+.ant-btn {
+    padding: 2.5px 20px;
+    height: auto;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.ant-menu {
+    .ant-menu-item {
+        width: 80% !important;
+        margin: 5px auto !important;
+        border-radius: 10px;
+
+        // &:hover {
+        //     background-color: #fff1;
+        // }
+    }
+}
+
+// .ant-drawer-header,
+// .ant-drawer-wrapper-body {
+//     background-color: #252931 !important;
+
+//     * {
+//         color: #fefefe;
+//     }
+// }
+
+.ant-drawer-body {
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #0002;
+        padding: 0.1rem;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #fff1;
+        border-radius: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #ffffff05;
+    }
+}
